@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+$font-logo: Caveat, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+/* layout */
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 7rem 1fr 5rem;
+}
+
+//HEADER
+
+.header {
+  grid-area: header;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: rgba(13, 90, 0, 0.8);
+
+  &__nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  &__nav-link-logo {
+    margin: 0 20px;
+    line-height: 70px;
+    font-family: $font-logo;
+    font-size: 4rem;
+    text-decoration: none;
+    color: white;
+  }
+
+  &__nav-list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__nav-element {
+    margin: 0 20px;
+    line-height: 70px;
+  }
+
+  &__nav-link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+
+
+
+
+
+//MAIN
+.main {
+  grid-area: main;
+  padding: 1rem;
+
+  //images
+  &__product-img {
+    border-radius: 0.5rem 0.5rem 0 0;
+
+    &.medium {
+      width: 100%;
+      max-width: 29rem;
+    }
+  }
+
+  //Product card
+  &__card {
+    margin: 1rem;
+    border-radius: 0.5rem;
+    background-color: #e2e2e2;
+  }
+
+  &__card-body {
+    padding: 1rem;
+  }
+
+
+  &__product-link {
+    text-decoration: none;
+  }
+
+  &__product-title {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      color: forestgreen;
+    }
+  }
+
+  &__product-price{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  //rating
+
+  &__product-rating {
+    text-align: center;
+    &--star {
+      color: goldenrod;
+    }
+  }
+
+}
+
+footer {
+  grid-area: footer;
+  background-color: #161616;
+
+  &__text {
+    color: white;
+    line-height: 50px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.center {
+  justify-content: center;
+}
+
