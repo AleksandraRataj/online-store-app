@@ -1,4 +1,25 @@
-# Getting Started with Create React App
+# Online store project
+
+Fully-functional e-commerce florist website build using MERN stack - MongoDB, ExpressJS, React and NodeJS. The goal of this project was to learn to learn Redux and repeat the rules of creating and working the API. In this project, I used the MongoDB non-relational
+database for the first time. 
+
+### I repeated and consolidated the use of such technologies as:
+
+1. HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox.
+2. React: Components, Props, Events, Hooks, Router, Axios.
+3. Redux: Store, Reducers, Actions.
+4. Node & Express: Web API, Body Parser, File Upload, JWT.
+5. MongoDB: Mongoose, Aggregation.
+6. Development: ESLint, Babel, Git, Github.
+7. Deployment: Heroku.
+
+### Project based on the course:
+
+https://github.com/basir/amazona
+
+https://www.youtube.com/watch?v=TRCDsB9i3bI&t=15461s
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

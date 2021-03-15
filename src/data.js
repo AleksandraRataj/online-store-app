@@ -1,7 +1,6 @@
 const data = {
     products: [
         {
-            _id: '1',
             name: 'Sansewieria',
             image: '/images/p1.jpg',
             price: 50,
@@ -12,7 +11,6 @@ const data = {
             description: 'Bardzo prosta w uprawie roślina',
         },
         {
-            _id: '2',
             name: 'Monstera Deliciosa',
             image: '/images/p2.jpg',
             price: 50,
@@ -23,7 +21,6 @@ const data = {
             description: 'Robi wrażenie!',
         },
         {
-            _id: '3',
             name: 'Coffea Arabica',
             image: '/images/p3.jpg',
             price: 50,
@@ -34,7 +31,6 @@ const data = {
             description: 'Miło zerknąć na nią pijąc kawę',
         },
         {
-            _id: '4',
             name: 'Trzykrotka',
             image: '/images/p4.jpg',
             price: 50,
@@ -45,7 +41,6 @@ const data = {
             description: 'Przepiękne ubarwienie',
         },
         {
-            _id: '5',
             name: 'Figowiec sprężysty',
             image: '/images/p5.jpg',
             price: 50,
@@ -56,7 +51,6 @@ const data = {
             description: 'Ma duże, zdrowe liście',
         },
         {
-            _id: '6',
             name: 'Strelicja',
             image: '/images/p6.jpg',
             price: 50,
