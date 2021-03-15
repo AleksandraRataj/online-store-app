@@ -3,6 +3,8 @@
 Fully-functional e-commerce florist website build using MERN stack - MongoDB, ExpressJS, React and NodeJS. The goal of this project was to learn to learn Redux and repeat the rules of creating and working the API. In this project, I used the MongoDB non-relational
 database for the first time. 
 
+The project is still in development!
+
 ### I repeated and consolidated the use of such technologies as:
 
 1. HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox.
@@ -12,6 +14,11 @@ database for the first time.
 5. MongoDB: Mongoose, Aggregation.
 6. Development: ESLint, Babel, Git, Github.
 7. Deployment: Heroku.
+
+### Screenshots
+
+![](./frontend/public/images/screen1.png)
+![](./frontend/public/images/screen2.png)
 
 ### Project based on the course:
 
