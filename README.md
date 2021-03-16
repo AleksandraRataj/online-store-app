@@ -19,6 +19,8 @@ The project is still in development!
 
 ![](./frontend/public/images/screen1.png)
 ![](./frontend/public/images/screen2.png)
+![](./frontend/public/images/screen4.png)
+![](./frontend/public/images/screen5.png)
 
 ### Project based on the course:
 
