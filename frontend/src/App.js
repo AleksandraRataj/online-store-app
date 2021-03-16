@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import ProductPage from "./pages/ProductPage";
 import CartPage from "./pages/CartPage";
 import {useSelector} from "react-redux";
+import SigninPage from "./pages/SigninPage";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
                     <Route exact path="/" component={HomePage}/>
                     <Route path="/product/:id" component={ProductPage}/>
                     <Route path="/cart/:id?" component={CartPage}/>
+                    <Route path="/signin" component={SigninPage}/>
 
                 </main>
                 <footer className="footer">
