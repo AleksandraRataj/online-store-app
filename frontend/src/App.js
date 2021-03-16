@@ -6,11 +6,14 @@ import CartPage from "./pages/CartPage";
 import {useDispatch, useSelector} from "react-redux";
 import SigninPage from "./pages/SigninPage";
 import {signout} from "./actions/userActions";
+import RegisterPage from "./pages/RegisterPage";
+import ShippingAddressPage from "./pages/ShippingAddressPage";
 
 function App() {
 
     const cart = useSelector(state => state.cart);
     const {cartItems} = cart;
+
     const userSignin = useSelector((state) => state.userSignin);
     const {userInfo} = userSignin;
 
@@ -59,6 +62,8 @@ function App() {
                     <Route path="/product/:id" component={ProductPage}/>
                     <Route path="/cart/:id?" component={CartPage}/>
                     <Route path="/signin" component={SigninPage}/>
+                    <Route path="/register" component={RegisterPage}/>
+                    <Route path="/shipping" component={ShippingAddressPage}/>
 
                 </main>
                 <footer className="footer">
