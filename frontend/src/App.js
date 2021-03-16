@@ -3,13 +3,22 @@ import {BrowserRouter, Link, Route} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ProductPage from "./pages/ProductPage";
 import CartPage from "./pages/CartPage";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import SigninPage from "./pages/SigninPage";
+import {signout} from "./actions/userActions";
 
 function App() {
 
     const cart = useSelector(state => state.cart);
     const {cartItems} = cart;
+    const userSignin = useSelector((state) => state.userSignin);
+    const {userInfo} = userSignin;
+
+    const dispatch = useDispatch();
+
+    const signoutHandler = () => {
+        dispatch(signout);
+    }
 
     return (
         <BrowserRouter>
@@ -27,8 +36,19 @@ function App() {
                                     )}
                                 </Link>
                             </li>
-                            <li className="header__nav-element">
-                                <Link className="header__nav-link" to="/signin">Zaloguj się</Link>
+                            <li className="header__nav-element dropdown">
+                                {
+                                    userInfo ? (
+                                        <div>
+                                            <Link className="dropdown__user-info" to="#">{userInfo.name} <i className="fa fa-caret-down"></i></Link>
+                                            <ul className="dropdown__content">
+                                                <Link className="dropdown__content-element" to="#signout" onClick={signoutHandler}>Wyloguj się</Link>
+                                            </ul>
+                                        </div>
+                                    ) : (
+                                        <Link className="header__nav-link" to="/signin">Zaloguj się</Link>
+                                    )
+                                }
                             </li>
                         </ul>
                     </nav>
